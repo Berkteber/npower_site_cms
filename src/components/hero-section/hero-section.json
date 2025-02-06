@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_hero_section_hero_sections",
+  "info": {
+    "displayName": "HeroSection"
+  },
+  "options": {},
+  "attributes": {
+    "MainTitle": {
+      "type": "string"
+    },
+    "HeroItem": {
+      "displayName": "Items",
+      "type": "component",
+      "repeatable": true,
+      "component": "hero-section.items"
+    }
+  }
+}

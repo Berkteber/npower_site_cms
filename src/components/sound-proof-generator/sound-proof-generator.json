@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_sound_proof_generator_sound_proof_generators",
+  "info": {
+    "displayName": "SoundProofGenerator"
+  },
+  "options": {},
+  "attributes": {
+    "GeneratorDataDescription": {
+      "displayName": "GeneratorData",
+      "type": "component",
+      "repeatable": true,
+      "component": "sound-proof-generator.generator-data"
+    },
+    "GeneratorDataFeatures": {
+      "displayName": "GeneratorFeature",
+      "type": "component",
+      "repeatable": true,
+      "component": "sound-proof-generator.generator-feature"
+    },
+    "SoundProofGeneratorImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

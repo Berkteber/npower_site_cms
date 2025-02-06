@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_sound_proof_generator_sound_proof_featur_items",
+  "info": {
+    "displayName": "SoundProofFeaturItems"
+  },
+  "options": {},
+  "attributes": {
+    "FeatureName": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "sound_proof_containers",
+  "info": {
+    "singularName": "sound-proof-container",
+    "pluralName": "sound-proof-containers",
+    "displayName": "SoundProofContainer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "blocks"
+    },
+    "MainImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "SoundProofGeneratorData": {
+      "displayName": "SoundProofGenerator",
+      "type": "component",
+      "repeatable": true,
+      "component": "sound-proof-generator.sound-proof-generator"
+    },
+    "SoundProofFeatures": {
+      "displayName": "SoundProofFeatures",
+      "type": "component",
+      "repeatable": false,
+      "component": "sound-proof-generator.sound-proof-features"
+    }
+  }
+}

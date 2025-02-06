@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_outer_fuel_tank_outer_fuel_tanks",
+  "info": {
+    "displayName": "OuterFuelTank"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    }
+  }
+}

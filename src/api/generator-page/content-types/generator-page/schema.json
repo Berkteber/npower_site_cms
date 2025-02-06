@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "generator_pages",
+  "info": {
+    "singularName": "generator-page",
+    "pluralName": "generator-pages",
+    "displayName": "GeneratorPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "DieselGenerators": {
+      "displayName": "GeneratorTabs",
+      "type": "component",
+      "repeatable": true,
+      "component": "generator-tabs.generator-tabs"
+    },
+    "GasGenerators": {
+      "type": "component",
+      "repeatable": true,
+      "component": "generator-tabs.generator-tabs"
+    },
+    "PortableGenerator": {
+      "type": "component",
+      "repeatable": true,
+      "component": "generator-tabs.generator-tabs"
+    }
+  }
+}

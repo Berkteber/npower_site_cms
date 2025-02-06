@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "catalog_pages",
+  "info": {
+    "singularName": "catalog-page",
+    "pluralName": "catalog-pages",
+    "displayName": "CatalogPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CatalogItem": {
+      "displayName": "Catalog",
+      "type": "component",
+      "repeatable": true,
+      "component": "catalog.catalog"
+    }
+  }
+}

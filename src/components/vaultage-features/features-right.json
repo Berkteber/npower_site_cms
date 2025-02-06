@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_vaultage_features_features_rights",
+  "info": {
+    "displayName": "FeaturesRight"
+  },
+  "options": {},
+  "attributes": {
+    "FeatureName": {
+      "type": "string"
+    }
+  }
+}

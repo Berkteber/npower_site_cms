@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_vaultage_features_vaultage_features",
+  "info": {
+    "displayName": "VaultageFeatures"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "FeaturesHeadRight": {
+      "type": "blocks"
+    }
+  }
+}

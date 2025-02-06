@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "fuel_tank_pages",
+  "info": {
+    "singularName": "fuel-tank-page",
+    "pluralName": "fuel-tank-pages",
+    "displayName": "FuelTankPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Content": {
+      "type": "blocks"
+    }
+  }
+}

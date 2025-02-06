@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sound_proof_generator_generator_data",
+  "info": {
+    "displayName": "GeneratorData"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Dimensions": {
+      "type": "string"
+    }
+  }
+}

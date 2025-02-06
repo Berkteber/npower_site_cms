@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_about_page_what_we_dos",
+  "info": {
+    "displayName": "WhatWeDo"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description1": {
+      "type": "blocks"
+    },
+    "Description2": {
+      "type": "blocks"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

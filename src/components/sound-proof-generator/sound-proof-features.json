@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_sound_proof_generator_sound_proof_features",
+  "info": {
+    "displayName": "SoundProofFeatures"
+  },
+  "options": {},
+  "attributes": {
+    "FeaturesTitle": {
+      "type": "string"
+    },
+    "FeaturesImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "SoundProofFeaturItems": {
+      "displayName": "SoundProofFeaturItems",
+      "type": "component",
+      "repeatable": true,
+      "component": "sound-proof-generator.sound-proof-featur-items"
+    }
+  }
+}

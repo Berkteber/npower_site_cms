@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_about_page_certificates",
+  "info": {
+    "displayName": "Certificate"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

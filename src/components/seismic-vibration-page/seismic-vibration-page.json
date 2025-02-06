@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_seismic_vibration_page_seismic_vibration_pages",
+  "info": {
+    "displayName": "SeismicVibrationPage"
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

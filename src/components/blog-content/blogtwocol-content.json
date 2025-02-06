@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blog_content_blogtwocol_contents",
+  "info": {
+    "displayName": "BlogtwocolContent"
+  },
+  "options": {},
+  "attributes": {
+    "BlogtwocolImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "BlogtwocolText": {
+      "type": "blocks"
+    }
+  }
+}

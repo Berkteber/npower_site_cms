@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_counter_section_counter_sections",
+  "info": {
+    "displayName": "CounterSection"
+  },
+  "options": {},
+  "attributes": {
+    "Description": {
+      "type": "blocks"
+    },
+    "Link1": {
+      "type": "string"
+    },
+    "Link2": {
+      "type": "string"
+    },
+    "CounterItem": {
+      "displayName": "CounterItem",
+      "type": "component",
+      "repeatable": true,
+      "component": "counter-section.counter-item"
+    }
+  }
+}

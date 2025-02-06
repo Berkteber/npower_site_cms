@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_about_page_about_brands",
+  "info": {
+    "displayName": "AboutBrand"
+  },
+  "options": {},
+  "attributes": {
+    "TabName": {
+      "type": "string"
+    },
+    "Images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

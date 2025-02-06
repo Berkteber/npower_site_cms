@@ -1,0 +1,56 @@
+{
+  "kind": "singleType",
+  "collectionName": "low_voltage_pages",
+  "info": {
+    "singularName": "low-voltage-page",
+    "pluralName": "low-voltage-pages",
+    "displayName": "LowVoltagePage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "blocks"
+    },
+    "MainImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "FeaturesHead": {
+      "displayName": "VaultageFeatures",
+      "type": "component",
+      "repeatable": false,
+      "component": "vaultage-features.vaultage-features"
+    },
+    "FeaturesLeft": {
+      "type": "blocks"
+    },
+    "FeaturesRight": {
+      "displayName": "FeaturesRight",
+      "type": "component",
+      "repeatable": true,
+      "component": "vaultage-features.features-right"
+    },
+    "Brands": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

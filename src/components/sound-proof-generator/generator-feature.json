@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_sound_proof_generator_generator_features",
+  "info": {
+    "displayName": "GeneratorFeature"
+  },
+  "options": {},
+  "attributes": {
+    "Feature": {
+      "type": "string"
+    }
+  }
+}

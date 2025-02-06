@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_features_items_medium_voltage_features",
+  "info": {
+    "displayName": "MediumVoltageFeatures"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "blocks"
+    }
+  }
+}

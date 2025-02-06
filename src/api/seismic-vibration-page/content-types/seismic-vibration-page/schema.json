@@ -1,0 +1,56 @@
+{
+  "kind": "singleType",
+  "collectionName": "seismic_vibration_pages",
+  "info": {
+    "singularName": "seismic-vibration-page",
+    "pluralName": "seismic-vibration-pages",
+    "displayName": "SeismicVibrationPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "MainImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Content": {
+      "type": "blocks"
+    },
+    "LeftSection": {
+      "type": "blocks"
+    },
+    "RightImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "FeaturesLeft": {
+      "type": "blocks"
+    },
+    "FeaturesRight": {
+      "type": "blocks"
+    },
+    "BrandLogos": {
+      "displayName": "SeismicVibrationPage",
+      "type": "component",
+      "repeatable": true,
+      "component": "seismic-vibration-page.seismic-vibration-page"
+    }
+  }
+}

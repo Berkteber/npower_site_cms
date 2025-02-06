@@ -1,0 +1,53 @@
+{
+  "kind": "singleType",
+  "collectionName": "medium_voltage_pages",
+  "info": {
+    "singularName": "medium-voltage-page",
+    "pluralName": "medium-voltage-pages",
+    "displayName": "MediumVoltagePage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "blocks"
+    },
+    "MainImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "PanelItem": {
+      "displayName": "PanelItems",
+      "type": "component",
+      "repeatable": true,
+      "component": "panel-items.panel-items"
+    },
+    "MediumVoltageFeatures": {
+      "displayName": "MediumVoltageFeatures",
+      "type": "component",
+      "repeatable": true,
+      "component": "features-items.medium-voltage-features"
+    },
+    "Brands": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

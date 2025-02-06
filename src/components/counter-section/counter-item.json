@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_counter_section_counter_items",
+  "info": {
+    "displayName": "CounterItem"
+  },
+  "options": {},
+  "attributes": {
+    "Value": {
+      "type": "biginteger"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

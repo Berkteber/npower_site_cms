@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_generator_tabs_table_rows",
+  "info": {
+    "displayName": "TableRows",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Model": {
+      "type": "string"
+    },
+    "YedekGuc": {
+      "type": "string"
+    },
+    "BirincilGuc": {
+      "type": "string"
+    },
+    "Hz": {
+      "type": "string"
+    },
+    "KatalogLink": {
+      "type": "string"
+    },
+    "DetayLink": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "blocks"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

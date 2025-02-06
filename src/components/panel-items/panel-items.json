@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_panel_items_panel_items",
+  "info": {
+    "displayName": "PanelItems"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    }
+  }
+}

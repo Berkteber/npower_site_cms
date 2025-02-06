@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_about_page_vission_mission_arges",
+  "info": {
+    "displayName": "VissionMissionArge"
+  },
+  "options": {},
+  "attributes": {
+    "VissionMissionTitle": {
+      "type": "string"
+    },
+    "VissionMissionDescription": {
+      "type": "blocks"
+    },
+    "VissionMissionImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "ArgeTitle": {
+      "type": "string"
+    },
+    "ArgeDescription": {
+      "type": "blocks"
+    },
+    "ArgeImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

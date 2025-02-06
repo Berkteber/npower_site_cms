@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_generator_tabs_generator_tabs",
+  "info": {
+    "displayName": "GeneratorTabs"
+  },
+  "options": {},
+  "attributes": {
+    "TabName": {
+      "type": "string"
+    },
+    "TabKey": {
+      "type": "string"
+    },
+    "TabImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "TableRows": {
+      "displayName": "TableRows",
+      "type": "component",
+      "repeatable": true,
+      "component": "generator-tabs.table-rows"
+    }
+  }
+}

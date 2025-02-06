@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_pages",
+  "info": {
+    "singularName": "about-page",
+    "pluralName": "about-pages",
+    "displayName": "AboutPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "WhoAreWe": {
+      "displayName": "WhoAreWe",
+      "type": "component",
+      "repeatable": false,
+      "component": "about-page.who-are-we"
+    },
+    "WhatWeDo": {
+      "displayName": "WhatWeDo",
+      "type": "component",
+      "repeatable": false,
+      "component": "about-page.what-we-do"
+    },
+    "VissionMissionArge": {
+      "displayName": "VissionMissionArge",
+      "type": "component",
+      "repeatable": false,
+      "component": "about-page.vission-mission-arge"
+    },
+    "BrandTab": {
+      "displayName": "AboutBrand",
+      "type": "component",
+      "repeatable": true,
+      "component": "about-page.about-brand"
+    },
+    "Certificate": {
+      "displayName": "Certificate",
+      "type": "component",
+      "repeatable": true,
+      "component": "about-page.certificate"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "outer_fuel_tanks",
+  "info": {
+    "singularName": "outer-fuel-tank",
+    "pluralName": "outer-fuel-tanks",
+    "displayName": "OuterFuelTank",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "OuterFuelTank": {
+      "displayName": "OuterFuelTank",
+      "type": "component",
+      "repeatable": true,
+      "component": "outer-fuel-tank.outer-fuel-tank"
+    },
+    "Content": {
+      "type": "blocks"
+    }
+  }
+}
