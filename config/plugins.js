@@ -12,7 +12,7 @@ module.exports = ({ env }) => ({
           },
         },
         settings: {
-          defaultFrom: "berktbrnecati@gmail.com",
+          defaultFrom: "berk.teber@creatiwe.co",
           defaultReplyTo: "berk.teber@creatiwe.co",
         },
       },
