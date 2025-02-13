@@ -505,6 +505,41 @@ export interface ApiFooterFooter extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiFormSubmissionFormSubmission
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'form_submissions';
+  info: {
+    displayName: 'Form Submission';
+    pluralName: 'form-submissions';
+    singularName: 'form-submission';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    companyName: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    email: Schema.Attribute.Email;
+    formType: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::form-submission.form-submission'
+    > &
+      Schema.Attribute.Private;
+    message: Schema.Attribute.Text;
+    name: Schema.Attribute.String;
+    phone: Schema.Attribute.String;
+    productDetails: Schema.Attribute.JSON;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiFuelTankPageFuelTankPage extends Struct.SingleTypeSchema {
   collectionName: 'fuel_tank_pages';
   info: {
@@ -1369,6 +1404,7 @@ declare module '@strapi/strapi' {
       'api::blog.blog': ApiBlogBlog;
       'api::catalog-page.catalog-page': ApiCatalogPageCatalogPage;
       'api::footer.footer': ApiFooterFooter;
+      'api::form-submission.form-submission': ApiFormSubmissionFormSubmission;
       'api::fuel-tank-page.fuel-tank-page': ApiFuelTankPageFuelTankPage;
       'api::generator-page.generator-page': ApiGeneratorPageGeneratorPage;
       'api::home-page.home-page': ApiHomePageHomePage;
