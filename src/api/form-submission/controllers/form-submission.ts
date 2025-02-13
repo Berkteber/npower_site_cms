@@ -35,7 +35,7 @@ export default factories.createCoreController('api::form-submission.form-submiss
         "https://api.resend.com/emails",
         {
           from: "onboarding@resend.dev",
-          to: ["berk.teber@creatiwe.co"], // Alıcı adresi
+          to: ["berktbrnecati@gmail.com"], // Alıcı adresi
           subject: `Yeni ${formType} Form Başvurusu`,
           html: emailContent,
         },
