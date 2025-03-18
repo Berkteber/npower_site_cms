@@ -1,7 +1,8 @@
-import { factories } from '@strapi/strapi';
+import { factories, Strapi } from '@strapi/strapi';
 import axios from 'axios';
 
-export default factories.createCoreController('api::form-submission.form-submission' as const, ({ strapi }) => ({
+export default factories.createCoreController<Strapi.ContentType>('api::form-submission.form-submission', ({ strapi }) => ({
+
   async create(ctx) {
     try {
       console.log("✅ Strapi form controller çağrıldı!");
