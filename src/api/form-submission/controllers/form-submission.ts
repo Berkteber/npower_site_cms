@@ -1,23 +1,25 @@
 import { factories } from '@strapi/strapi';
 import axios from 'axios';
 
-export default factories.createCoreController('api::form-submission.form-submission', ({ strapi }) => ({
+export default factories.createCoreController('api::form-submission.form-submission' as const, ({ strapi }) => ({
   async create(ctx) {
     try {
       console.log("✅ Strapi form controller çağrıldı!");
 
-      const { formType, name, email, phone, companyName, productDetails, message } = ctx.request.body.data;
+      // 1. Form verisini al ve hata kontrolü yap
+      const requestData = ctx.request.body?.data || {};
+      const { formType, name, email, phone, companyName, productDetails, message } = requestData;
 
-      console.log("📩 Gelen form verileri:", { formType, name, email, phone, companyName, productDetails, message });
+      console.log("📩 Gelen form verileri:", requestData);
 
-      // 1. Form verisini Strapi'ye kaydet
+      // 2. Form verisini Strapi'ye kaydet
       const newEntry = await strapi.entityService.create("api::form-submission.form-submission", {
         data: { formType, name, email, phone, companyName, productDetails, message },
       });
 
       console.log("✅ Form başarıyla kaydedildi:", newEntry);
 
-      // 2. E-posta içeriğini hazırla
+      // 3. E-posta içeriğini hazırla
       const emailContent = `
         <h2>Yeni ${formType} Form Başvurusu</h2>
         <p><strong>Ad:</strong> ${name}</p>
@@ -30,12 +32,12 @@ export default factories.createCoreController('api::form-submission.form-submiss
 
       console.log("📨 E-posta gönderilmeye hazırlanıyor...");
 
-      // 3. Resend API ile mail gönder
+      // 4. Resend API ile mail gönder
       const response = await axios.post(
         "https://api.resend.com/emails",
         {
           from: "onboarding@resend.dev",
-          to: ["berktbrnecati@gmail.com"], // Alıcı adresi
+          to: ["berktbrnecati@gmail.com"],
           subject: `Yeni ${formType} Form Başvurusu`,
           html: emailContent,
         },
@@ -51,8 +53,8 @@ export default factories.createCoreController('api::form-submission.form-submiss
 
       return newEntry;
     } catch (error) {
-      console.error("❌ E-posta gönderme hatası:", error.response ? error.response.data : error.message);
-      ctx.throw(500, "Form gönderilirken hata oluştu!");
+      console.error("❌ Hata:", error.response ? error.response.data : error.message);
+      ctx.throw(500, `Form gönderilirken hata oluştu: ${error.message}`);
     }
   }
 }));
