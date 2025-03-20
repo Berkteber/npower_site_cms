@@ -6,8 +6,8 @@
   "scripts": {
     "build": "strapi build",
     "deploy": "strapi deploy",
-    "develop": "strapi start",
-    "start": "strapi develop",
+    "develop": "strapi develop",
+    "start": "strapi start",
     "strapi": "strapi"
   },
   "dependencies": {
