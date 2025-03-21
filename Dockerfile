@@ -4,15 +4,11 @@ WORKDIR /app
 
 COPY package.json package-lock.json ./
 
-RUN npm ci
-
-# Bellek sınırını artır ve eski cache’leri temizle
-ENV NODE_OPTIONS=--max-old-space-size=1024
-
-RUN rm -rf .cache node_modules/.cache
+RUN npm install --legacy-peer-deps
 
 COPY . .
 
-RUN npm run build
+# BU SATIRI SİL (çünkü localde build ettik)
+# RUN npm run build
 
 CMD ["npm", "start"]
