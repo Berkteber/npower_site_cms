@@ -4,11 +4,14 @@ WORKDIR /app
 
 COPY package.json package-lock.json ./
 
-RUN npm install --legacy-peer-deps
+RUN npm ci
 
 COPY . .
 
-# BU SATIRI SİL (çünkü localde build ettik)
-# RUN npm run build
+ENV NODE_OPTIONS="--max-old-space-size=2048"
+
+RUN npm run build
+
+EXPOSE 1337
 
 CMD ["npm", "start"]
