@@ -6,12 +6,12 @@ COPY package.json package-lock.json ./
 
 RUN npm ci
 
-# Önbellek sorunlarını önlemek için temizle
+# Bellek sınırını artır ve eski cache’leri temizle
+ENV NODE_OPTIONS=--max-old-space-size=1024
+
 RUN rm -rf .cache node_modules/.cache
 
 COPY . .
-
-ENV NODE_OPTIONS="--max-old-space-size=1024"
 
 RUN npm run build
 
